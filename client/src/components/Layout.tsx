@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Linkedin, Mail, Phone } from "lucide-react";
+import { Menu, X, Linkedin, Mail, Phone, Instagram } from "lucide-react";
 import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -137,13 +137,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Linkedin size={18} />
                   <span>LinkedIn</span>
                 </a>
+                <a
+                  href="https://www.instagram.com/ej.direcionamento/?igsh=cGlpMHhzMG14cWFt#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-white transition-colors"
+                >
+                  <Instagram size={18} />
+                  <span>@ej.direcionamento</span>
+                </a>
                 <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                   <Mail size={18} />
-                  <span>contato@ejfinanceiro.com.br</span>
+                  <span>ejdirecionamentofinanceiro@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                   <Phone size={18} />
-                  <span>(XX) XXXXX-XXXX</span>
+                  <span>(83) 98888-0292</span>
                 </div>
               </div>
             </div>
