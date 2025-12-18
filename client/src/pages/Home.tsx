@@ -58,7 +58,11 @@ export default function Home() {
               </motion.p>
 
               <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 h-14 rounded-full shadow-lg shadow-primary/20">
+                <Button
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 h-14 rounded-full shadow-lg shadow-primary/20"
+                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Agendar Diagnóstico Gratuito
                 </Button>
                 <Button
@@ -482,11 +486,20 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white gap-2 h-14 px-8 text-lg rounded-full">
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white gap-2 h-14 px-8 text-lg rounded-full"
+                onClick={() => window.open('https://api.whatsapp.com/send?phone=5583988880292', '_blank')}
+              >
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Chamar no WhatsApp
               </Button>
-              <Button variant="outline" size="lg" className="gap-2 h-14 px-8 text-lg rounded-full">
+              <Button
+                variant="outline"
+                size="lg"
+                className="gap-2 h-14 px-8 text-lg rounded-full"
+                onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ejdirecionamentofinanceiro@gmail.com', '_blank')}
+              >
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 Enviar E-mail
               </Button>
